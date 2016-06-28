@@ -1,4 +1,4 @@
-package x.x;
+package org.framework.test;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,4 +1,4 @@
-package x.x;
+package org.framework.test;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

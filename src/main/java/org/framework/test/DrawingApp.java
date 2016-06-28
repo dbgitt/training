@@ -1,10 +1,10 @@
-package x.x;
-
-import javax.persistence.EntityManager;
+package org.framework.test;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
+
+import javax.persistence.EntityManager;
 
 @SuppressWarnings("deprecation")
 public class DrawingApp {

@@ -1,4 +1,4 @@
-package x.x;
+package org.framework.test;
 
 public class Circle {
 
