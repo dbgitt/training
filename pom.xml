@@ -74,5 +74,11 @@
                 <role>developer</role>
             </roles>
         </developer>
+        <developer>
+            <name>Daniel Boogert</name>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
     </developers>
 </project>
