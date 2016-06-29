@@ -5,45 +5,39 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "test")
-public class TableTest {
+@Entity @Table(name = "test") public class TableTest {
 
-	@Id
-	@GeneratedValue
-	private Integer id;
-	private String name;
+    @Id @GeneratedValue private Integer id;
+    private String name;
 
-	/**
-	 * @return the id
-	 */
-	public Integer getId() {
-		return id;
-	}
+    /**
+     * @return the id
+     */
+    public Integer getId() {
+	return id;
+    }
 
-	/**
-	 * @param id
-	 *            the id to set
-	 */
-	public TableTest setId(Integer id) {
-		this.id = id;
-		return this;
-	}
+    /**
+     * @param id the id to set
+     */
+    public TableTest setId(Integer id) {
+	this.id = id;
+	return this;
+    }
 
-	/**
-	 * @return the name
-	 */
-	public String getName() {
-		return name;
-	}
+    /**
+     * @return the name
+     */
+    public String getName() {
+	return name;
+    }
 
-	/**
-	 * @param name
-	 *            the name to set
-	 */
+    /**
+     * @param name the name to set
+     */
 
-	public TableTest setName(String name) {
-		this.name = name;
-		return this;
-	}
+    public TableTest setName(String name) {
+	this.name = name;
+	return this;
+    }
 }
