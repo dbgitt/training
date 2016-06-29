@@ -7,29 +7,31 @@ import javax.persistence.Table;
 
 @Entity @Table(name = "test") public class TableTest {
 
-    @Id @GeneratedValue private Integer id;
+    @Id
+    @GeneratedValue
+    private Integer id;
     private String name;
 
     /**
      * @return the id
      */
     public Integer getId() {
-	return id;
+        return id;
     }
 
     /**
      * @param id the id to set
      */
     public TableTest setId(Integer id) {
-	this.id = id;
-	return this;
+        this.id = id;
+        return this;
     }
 
     /**
      * @return the name
      */
     public String getName() {
-	return name;
+        return name;
     }
 
     /**
@@ -37,7 +39,7 @@ import javax.persistence.Table;
      */
 
     public TableTest setName(String name) {
-	this.name = name;
-	return this;
+        this.name = name;
+        return this;
     }
 }

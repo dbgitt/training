@@ -9,29 +9,28 @@ import javax.persistence.EntityManager;
 @SuppressWarnings("deprecation") public class DrawingApp {
 
     public DrawingApp() {
+        // SPRING
+        BeanFactory factory = new XmlBeanFactory(new ClassPathResource("spring.xml"));
+        // Voor het aanmaken van Circle wordt het volgende statement vervangen
+        // Circle c = new Circle();
+        Circle c = (Circle) factory.getBean("circle");
+        c.draw();
+        c.getMessage();
 
-	// SPRING
-	BeanFactory factory = new XmlBeanFactory(new ClassPathResource("spring.xml"));
-	// Voor het aanmaken van Circle wordt het volgende statement vervangen
-	// Circle c = new Circle();
-	Circle c = (Circle) factory.getBean("circle");
-	c.draw();
-	c.getMessage();
+        // JPA
+        TableTest tableTest = new TableTest();
 
-	// JPA
-	TableTest tableTest = new TableTest();
+        tableTest.setName("Javaantje");
 
-	tableTest.setName("Javaantje");
-
-	EntityManager em = PersistenceManager.INSTANCE.getEntityManager();
-	em.getTransaction().begin();
-	em.persist(tableTest);
-	em.getTransaction().commit();
-	em.close();
-	PersistenceManager.INSTANCE.close();
+        EntityManager em = PersistenceManager.INSTANCE.getEntityManager();
+        em.getTransaction().begin();
+        em.persist(tableTest);
+        em.getTransaction().commit();
+        em.close();
+        PersistenceManager.INSTANCE.close();
     }
 
     public static void main(String[] args) {
-	new DrawingApp();
+        new DrawingApp();
     }
 }

@@ -10,16 +10,16 @@ public enum PersistenceManager {
     private EntityManagerFactory emFactory;
 
     private PersistenceManager() {
-	// "jpa-example" was the value of the name attribute of the
-	// persistence-unit element.
-	emFactory = Persistence.createEntityManagerFactory("jpa_example");
+        // "jpa-example" was the value of the name attribute of the
+        // persistence-unit element.
+        emFactory = Persistence.createEntityManagerFactory("jpa_example");
     }
 
     public EntityManager getEntityManager() {
-	return emFactory.createEntityManager();
+        return emFactory.createEntityManager();
     }
 
     public void close() {
-	emFactory.close();
+        emFactory.close();
     }
 }
