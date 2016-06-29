@@ -18,7 +18,7 @@ import javax.persistence.EntityManager;
         c.getMessage();
 
         // JPA
-        TableTest tableTest = new TableTest();
+        TableTest tableTest = new TableTestt();
 
         tableTest.setName("Javaantje");
 
