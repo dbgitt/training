@@ -8,5 +8,9 @@
     <bean id="circle" class="org.framework.test.Circle">
         <property name="message" value="Hello World!"/>
     </bean>
+    
+    <bean id="circle2" class="org.framework.test.Circle">
+        <property name="message" value="Hello World2!"/>
+    </bean>
 
 </beans>

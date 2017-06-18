@@ -20,7 +20,7 @@ import javax.persistence.EntityManager;
         // JPA
         TableTest tableTest = new TableTest();
 
-        tableTest.setName("Javaantje");
+        tableTest.setName("Javaantje22");
 
         EntityManager em = PersistenceManager.INSTANCE.getEntityManager();
         em.getTransaction().begin();
